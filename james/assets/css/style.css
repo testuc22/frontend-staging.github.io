@@ -42,6 +42,7 @@ section {
 img{
 	max-width: 100%;
 }
+
 .text-center{
 	text-align: center;
 }
@@ -95,7 +96,7 @@ header::after {
 }
 .btn-black:hover {
     color: #000;
-    background-position: -100%;
+    background-position: -99%;
 }
 .banner_section_wrap h1{
 	font-size: 5rem;
@@ -272,6 +273,13 @@ header::after {
 }
 .pricing_cards .price_card .desc .price {
   text-align: center;
+  margin: 0;
+}
+.pricing_cards .price_card .desc .price.custom {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1;
 }
 .pricing_cards .price_card .desc .price .highlight {
   display: inherit;
@@ -284,4 +292,113 @@ header::after {
 .pricing_cards .price_card .desc ul li {
   list-style-type: disc;
   margin-bottom: 12px;
+}
+.pricing_cards .price_card .desc ul {
+  margin-top: 40px;
+}
+.pricing_cards .price_card .desc ul li strong {
+    font-style: italic;
+}
+.price_disclaimer {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.services_section_wrap .services_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.services_section_wrap .services_block .service {
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+}
+.services_section_wrap .services_block .service img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.services_section_wrap .services_block .service .desc {
+    padding: 35px;
+}
+.services_section_wrap .services_block .service .desc ul {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.services_section_wrap .services_block .service .desc ul li {
+  list-style-type: disc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.about_us_section_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.about_us_section_wrap > div {
+  width: 50%;
+}
+.consultation_wrap form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.width-50 {
+  width: 50%;
+}
+.width-100 {
+  width: 100%;
+}
+input, select {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border-color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+input:focus, input:active {
+  border: 1px solid #000;
+}
+.consultation_wrap {
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+}
+.consultation_wrap h2 {
+  color: #fff;
+  margin: 30px 0 70px 0;
+  display: inline-block;
+}
+.consultation_wrap form .form-group {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.consultation_wrap form  .width-50 {
+  width: calc(50% - 10px);
+}
+.consultation_wrap form input, .consultation_wrap form select {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.consultation_wrap form .btn {
+    width: 25%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.consultation_wrap form .btn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+section.consultation_section {
+    padding-bottom: 0;
+}
+footer {
+  padding: 30px 0;
 }
