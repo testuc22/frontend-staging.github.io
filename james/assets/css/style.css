@@ -2,14 +2,30 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Cabin';
 }
 :root{
     --gray:#eee;
 }
+@font-face{
+    font-family: "Gilroy";
+    src:url(../fonts/Gilroy-Bold.woff);
+    font-weight: 800;
+}
+@font-face{
+    font-family: "Gilroy";
+    src:url(../fonts/Gilroy-Medium.woff);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Gilroy";
+    src:url(../fonts/Gilroy-Regular.woff);
+    font-weight: normal;
+}
 body{
 	font-size: 20px;
 	color:#000;
+    font-family: "Gilroy";
+    font-weight: normal;
 }
 a{
 	text-decoration: none;
@@ -269,7 +285,7 @@ header::after {
 }
 .pricing_cards .price_card .desc {
   padding: 30px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .pricing_cards .price_card .desc .price {
   text-align: center;
