@@ -83,10 +83,14 @@ header::after {
     top: 0;
     right: 0;
     background: url(../images/bg-layer.png) no-repeat !important;
-    z-index: 9;
+    background-position: right !important;
+    z-index: 1;
     height: 100%;
     width: 54%;
     background-size: contain !important;
+}
+section {
+    z-index: 2;
 }
 .header_inner .menu_wrapper ul {
   display: flex;
@@ -118,7 +122,7 @@ header::after {
 	font-size: 5rem;
 }
 .banner_section_wrap .sub_title {
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 400;
     margin: 25px 0;
 }
@@ -146,17 +150,18 @@ header::after {
 .key_points li{
 	position: relative;
 }
-.key_points li::before{
-	content: "";
-	width: 10px;
-	height: 10px;
-	display: inline-block;
-	position: absolute;
-	border-top: 2px solid #000;
-	left: -20px;
-	border-left: 2px solid #000;
-	transform: rotate(136deg);
-	margin: 5px 0 0px -5px;
+.key_points li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  border-top: 2px solid #000;
+  left: -20px;
+  border-left: 2px solid #000;
+  transform: translateY(-50%) rotate(136deg);
+  margin: 0 0 0px -5px;
+  top: 50%;
 }
 .image_icons li > div{
     display: flex;
