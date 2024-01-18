@@ -46,8 +46,8 @@ p {
   line-height: 1.8;
 }
 .container{
-	width: 1140px;
-	padding-right: 15px;
+	width: 100%;
+	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
 }
@@ -80,7 +80,7 @@ header .menu_wrapper{
 header::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -20px;
     right: 0;
     background: url(../images/bg-layer.png) no-repeat !important;
     background-position: right !important;
@@ -150,7 +150,7 @@ section {
 .key_points li{
 	position: relative;
 }
-.key_points li::before {
+/*.key_points li::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -162,19 +162,28 @@ section {
   transform: translateY(-50%) rotate(136deg);
   margin: 0 0 0px -5px;
   top: 50%;
+}*/
+.key_points li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    border-top: 2px solid #000;
+    left: -20px;
+    border-left: 2px solid #000;
+    transform: rotate(136deg);
+    margin: 5px 0 0px -5px;
 }
 .image_icons li > div{
     display: flex;
-	justify-content: center;
 	align-items: center;
 }
 .image_icons li > div img {
     width: 30px;
     margin-right: 10px;
 }
-.image_icons span {
-    font-size: 18px;
-}
+
 .image_icons li{
 	position: absolute;
 	background: #fff;
@@ -422,4 +431,167 @@ section.consultation_section {
 }
 footer {
   padding: 30px 0;
+}
+li.entrepreneurs {
+  width: 190px;
+}
+li.entrepreneurs span {
+  width: 115px;
+}
+li.influencers {
+  width: 165px;
+}
+li.influencers span {
+  width: 89px;
+}
+li.ecommerce{
+    width: 182px;
+}
+li.ecommerce span{
+    width: 110px;
+}
+li.content_creators{
+    width: 215px;
+}
+li.content_creators span{
+    width:144px;
+}
+li.subscription_model{
+    width: 235px;
+}
+li.subscription_model span{
+    width: 162px;
+}
+.image_icons span {
+  font-size: 18px;
+  animation: moving_text 3s linear infinite alternate-reverse;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes moving_text {
+    from {
+        width:0;
+    }
+}
+
+/*@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+    header::after{
+        background: none !important;
+    }
+}*/
+@media (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .banner_section .banner_section_wrap{
+        flex-wrap:wrap;
+    }
+    .banner_section_wrap > div {
+        width: 100%;
+    }
+    .banner_section_wrap h1 {
+        font-size: 2rem;
+    }
+    .banner_section_wrap .sub_title {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    .banner_section .banner_section_wrap ul {
+      padding-left: 25px;
+    }
+    .banner_section .banner_section_wrap ul li {
+      font-size: 17px;
+    }
+    .banner_section_wrap div:first-child {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+    .testimonials_wrap .swiper-button-prev {
+      left: 85%;
+    }
+    .image_icons span{
+        font-size: 13px;
+    }
+    .image_icons li > div img{
+        width: 20px;
+    }
+    li.entrepreneurs span {
+      width: 84px;
+    }
+    li.ecommerce span {
+      width: 80px;
+    }
+    li.influencers span {
+        width: 65px;
+    }
+    li.subscription_model span {
+      width: 118px;
+    }
+    li.content_creators span {
+      width: 105px;
+    }
+    .image_icons li:first-child {
+      top: 0%;
+      left: 10%;
+    }
+    li.entrepreneurs {
+      width: 155px;
+    }
+    li.ecommerce {
+      width: 150px;
+    }
+    .image_icons li.influencers {
+       width: 140px;
+       left: -7%;
+     }
+    li.subscription_model {
+      width: 185px;
+    }
+    li.content_creators {
+      width: 185px;
+    }
+    .banner_section_wrap h1{
+        font-size:3rem;
+    }
+    .banner_section_wrap .sub_title {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .banner_section .banner_section_wrap ul li {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .pricing_cards{
+        gap:10px;
+    }
+    .pricing_cards .price_card .desc {
+        padding: 15px;
+    }
+    .pricing_cards .price_card .desc ul {
+      padding-left: 10px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    .testimonials_wrap .swiper-button-prev {
+        left: 87%;
+    }
+    header::after{
+        background:none !important;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .container{
+        max-width: 1140px;
+    }
 }

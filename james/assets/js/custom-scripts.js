@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 		      spaceBetween: 40
 		    },
 		    767:{
-		    	slidesPerView: 3
+		    	slidesPerView: 2
 		    }
 	  	}
 
