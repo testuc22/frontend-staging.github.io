@@ -11,10 +11,11 @@ jQuery(document).ready(function($){
 	  	breakpoints: {
 		    320: {
 		      slidesPerView: 1,
-		      spaceBetween: 30
+		      spaceBetween: 30,
+		      navigation:false
 		    },
 		    640: {
-		      slidesPerView: 2,
+		      slidesPerView: 1,
 		      spaceBetween: 40
 		    },
 		    767:{
