@@ -26,4 +26,14 @@ jQuery(document).ready(function($){
 	});
 	console.log(swiper,"swiper");
 
+	$('.m-menu a').on('click',function(){
+		if($('body').hasClass('open-m-menu')){
+			$('body').removeClass('open-m-menu'); 
+		}
+		else{
+			$('body').addClass('open-m-menu'); 
+		}
+		
+	})
+
 });
